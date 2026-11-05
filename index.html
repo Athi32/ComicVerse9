@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ComicVerse comic book store catalogue">
+  <title>ComicVerse | Comic Book Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="./"><span class="brand-mark">✦</span> ComicVerse</a><nav><a href="#catalogue">Catalogue</a><a href="#about">About</a></nav><a class="cart-pill" href="#catalogue">Explore comics <span>↗</span></a></header>
+  <main>
+    <section class="hero"><div class="hero-copy"><p class="eyebrow">YOUR NEXT GREAT ADVENTURE STARTS HERE</p><h1>Every hero has<br><em>a first issue.</em></h1><p class="hero-text">Discover legendary stories, iconic characters and hidden gems from across the comic universe.</p><a class="primary" href="#catalogue">Explore the collection <span>→</span></a><div class="hero-note"><span class="dot"></span> A universe of stories, all in one place</div></div><div class="hero-art" aria-label="Comic book themed artwork"><div class="burst">POW!</div><div class="comic-card card-back"><span>ISSUE Nº 08</span><b>THE<br>UNKNOWN</b><small>THE ADVENTURE CONTINUES</small></div><div class="comic-card card-front"><span>COMICVERSE ORIGINAL</span><b>HEROES<br><i>RISE.</i></b><small>ONE STORE. INFINITE WORLDS.</small><div class="cover-star">✦</div></div><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div></div></section>
+    <section class="stats"><div><strong id="comic-count">6</strong><span>Featured comics</span></div><div><strong>04</strong><span>Story categories</span></div><div><strong>∞</strong><span>Worlds to explore</span></div></section>
+    <section class="catalogue" id="catalogue"><div class="section-heading"><div><p class="eyebrow">FIND YOUR NEXT READ</p><h2>The collection<span>.</span></h2></div><p class="section-desc">Browse the shelves and find a story worth keeping.</p></div>
+      <div class="toolbar"><label class="search"><span>⌕</span><input id="search" type="search" placeholder="Search comics or characters..."></label><select id="category"><option value="all">All categories</option><option>Superhero</option><option>Fantasy</option><option>Sci-Fi</option><option>Adventure</option></select><select id="sort"><option value="featured">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option><option value="title">Title: A–Z</option></select></div>
+      <div id="comic-grid" class="comic-grid" aria-live="polite"></div><p class="demo-note" id="data-note">Showing sample catalogue data. Connect the deployed backend to load and manage MongoDB records.</p>
+    </section>
+    <section class="about" id="about"><div><p class="eyebrow">BUILT FOR THE LOVE OF COMICS</p><h2>Turn the page.<br><em>Find your universe.</em></h2></div><p>ComicVerse is a student database project demonstrating how a comic catalogue can be presented on the web. The companion backend uses Node.js, Express and MongoDB for persistent data operations.</p></section>
+  </main>
+  <footer><a class="brand" href="./"><span class="brand-mark">✦</span> ComicVerse</a><span>Comic Book Store · MongoDB Experiment 9</span><span>Made for readers everywhere.</span></footer>
+  <script src="script.js"></script>
+</body></html>
